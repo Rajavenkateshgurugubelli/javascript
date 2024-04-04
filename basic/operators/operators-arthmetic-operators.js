@@ -46,3 +46,18 @@ console.log('increment of a',++a)                      // the value is updated t
 console.log('value of a after pre increment =',a)      // as it was updated earlier we will get the same value of a as 11.
 
 
+// decrement operators
+// this is same as increment but the value is decreased instead of increase..
+// pre decrement
+a=10
+console.log('value of a =',a) //10
+console.log('value of a predecrement a during operation =',--a) //9
+console.log('value of a predecrement a after operation =',--a) //9
+
+//post decrement
+a=10
+console.log('value of a =',a)  //10
+console.log('value of a post decrement a during operation =',a--) //10
+console.log('value of post decrement a after operation =', a) //9 
+
+
