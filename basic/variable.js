@@ -11,3 +11,6 @@ _name="jhon"
 $age=21
 
 console.log(_name,$age) // output is 'jhon 21'
+
+// in the above example a,A,_name,$age are valid variables.
+// 007bond, &name are invalid
