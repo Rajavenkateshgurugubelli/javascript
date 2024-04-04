@@ -42,7 +42,7 @@ console.log(typeof x); // Output: "number"
 
 //7. void opearator
 let url = "https://example.com";
-let result = void window.open(url);
+//let result = void window.open(url);
 /* The void operator evaluates an expression and then returns undefined. It's often used to obtain the undefined primitive value. 
 In this example, we're using void to open a URL in a new window and assign the result to result, which will be undefined.*/
 
