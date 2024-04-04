@@ -7,57 +7,58 @@ these are following types of operations
 4. Logical operators
 5. Assignement operators
 6. special operators */
+/* JavaScript Operators */
 
-a=10
-b=5
+// Initialization
+let a = 10;
+let b = 5;
 
-// 1. Arthematic operations can be performed using Arthematic operators like following
+// 1. Arithmetic Operators
+// Arithmetic operators are used to perform mathematical operations on numbers.
 
+// Addition (+)
+let c = a + b; // 10 + 5 = 15
+console.log('Addition:', c);
 
-// Addition +
-c=a+b          //15
-console.log('addition of a+b =',c)
+// Subtraction (-)
+c = a - b; // 10 - 5 = 5
+console.log('Subtraction:', c);
 
-//Substraction
-c=a-b          // 5
-console.log('substraction of a-b =',c)
+// Multiplication (*)
+c = a * b; // 10 * 5 = 50
+console.log('Multiplication:', c);
 
-//Multiply
-c=a*b     //50
-console.log('multiply of a*b =',c)
+// Division (/)
+c = a / b; // 10 / 5 = 2
+console.log('Division:', c);
 
-//Divide => this gives the qoutient part of the division
-c=a/b    //2
-console.log('division of a/b =',c)
+// Modulus (%)
+c = a % b; // 10 % 5 = 0 (no remainder)
+console.log('Modulus:', c);
 
-//Modulus => this gives the reminder part of the divison
-c=a%b //0
-console.log('modulus of a%b =',c)
+// Increment Operator (++)
+// Post-increment (a++)
+console.log('Post-increment:');
+console.log('Value of a before increment:', a); // a = 10
+console.log('Incremented value:', a++); // Post-increment: increment happens after the value is returned (so it logs 10 but updates to 11)
+console.log('Value of a after increment:', a); // a = 11
 
-//increment operator => this got 2 types pre(++a) and post(a++)
-console.log('value of a before post increment =',a) // value of a is 10
-console.log('increment of a',a++)          // the value is incremented a is updated after the value of a is logged in console as 10
-console.log('value of a after post increment =',a)   // here we can see the value is logged in console with the updated value of a is 11 
+// Pre-increment (++a)
+a = 10; // Reset a to 10
+console.log('\nPre-increment:');
+console.log('Value of a before increment:', a); // a = 10
+console.log('Incremented value:', ++a); // Pre-increment: increment happens before the value is returned (so it logs and updates to 11)
+console.log('Value of a after increment:', a); // a = 11
 
-// to get the updated value of a. we can use the pre increment
-a=10
-console.log('value of a before pre increment =',a)     // the  value of a is 10 here 
-console.log('increment of a',++a)                      // the value is updated to 11 here and the logged as 11 here. the operation is done first and assignned later the value was logged
-console.log('value of a after pre increment =',a)      // as it was updated earlier we will get the same value of a as 11.
+// Decrement Operator (--)
+// Post-decrement (a--)
+console.log('\nPost-decrement:');
+console.log('Value of a before decrement:', a); // a = 11
+console.log('Decremented value:', a--); // Post-decrement: decrement happens after the value is returned (so it logs 11 but updates to 10)
+console.log('Value of a after decrement:', a); // a = 10
 
-
-// decrement operators
-// this is same as increment but the value is decreased instead of increase..
-// pre decrement
-a=10
-console.log('value of a =',a) //10
-console.log('value of a predecrement a during operation =',--a) //9
-console.log('value of a predecrement a after operation =',--a) //9
-
-//post decrement
-a=10
-console.log('value of a =',a)  //10
-console.log('value of a post decrement a during operation =',a--) //10
-console.log('value of post decrement a after operation =', a) //9 
-
-
+// Pre-decrement (--a)
+console.log('\nPre-decrement:');
+console.log('Value of a before decrement:', a); // a = 10
+console.log('Decremented value:', --a); // Pre-decrement: decrement happens before the value is returned (so it logs and updates to 9)
+console.log('Value of a after decrement:', a); // a = 9

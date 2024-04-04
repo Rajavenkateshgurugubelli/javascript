@@ -1,50 +1,64 @@
-// Comparision operators
-// these operators are used to compare 2 operands
+// Comparison Operators in JavaScript
 
+// Comparison operators are used to compare two operands and return a boolean value (true or false) based on the comparison result.
 
-// is equal to ==
-console.log('is equal to ==')
-console.log('10==20 ',10==20) // false
-console.log('10==10',10==10) // true
-console.log('10== \'10\'',10=='10') // true
+// 1. Equal to (==)
+console.log('Equal to (==)');
+console.log('10 == 20:', 10 == 20); // Output: false
+console.log('10 == 10:', 10 == 10); // Output: true
+console.log('10 == \'10\':', 10 == '10'); // Output: true
+// Explanation: The '==' operator checks if the values of the two operands are equal. 
+// It performs type coercion, meaning it converts operands to the same type before comparison. 
+// So, 10 is equal to '10' because JavaScript converts the string '10' to a number before comparison.
 
-// identical ===
-console.log('identical ===')
-console.log('10===20',10===20)// false
-console.log('10=== \'10\'',10==='10')// false
+// 2. Identical (===)
+console.log('Identical (===)');
+console.log('10 === 20:', 10 === 20); // Output: false
+console.log('10 === \'10\':', 10 === '10'); // Output: false
+// Explanation: The '===' operator checks if the values and types of the two operands are strictly equal. 
+// Unlike '==', '===' does not perform type coercion. 
+// So, 10 is not strictly equal to '10' because they are of different types.
 
-//not equal to
-console.log('not equal to')
-console.log('10!=20',10!=20)// true
-console.log('10!= \'10\'',10!='10')// false
-console.log('10!= \'20\'',10!='20')//true
+// 3. Not Equal to (!=)
+console.log('Not Equal to (!=)');
+console.log('10 != 20:', 10 != 20); // Output: true
+console.log('10 != \'10\':', 10 != '10'); // Output: false
+// Explanation: The '!=' operator checks if the values of the two operands are not equal. 
+// It performs type coercion similar to '=='. 
+// So, 10 is not equal to '10' because they have different types.
 
-//Not identical
-console.log('Not identical')
-console.log('10!==20',10!==20)//true
-console.log('10!== \'10\'',10!=='10')//true
-console.log('10!== \'20\'',10!=='20')//true
+// 4. Not Identical (!==)
+console.log('Not Identical (!==)');
+console.log('10 !== 20:', 10 !== 20); // Output: true
+console.log('10 !== \'10\':', 10 !== '10'); // Output: true
+// Explanation: The '!==' operator checks if the values or types of the two operands are not strictly equal. 
+// It does not perform type coercion. 
+// So, 10 is not strictly equal to '10' because they are of different types.
 
-//greater than
-console.log('greater than')
-console.log('10>5',10>5)//true
-console.log('5>10',5>10)// false
-console.log('10>10',10>10)// false
+// 5. Greater Than (>)
+console.log('Greater Than (>)');
+console.log('10 > 5:', 10 > 5); // Output: true
+console.log('5 > 10:', 5 > 10); // Output: false
+console.log('10 > 10:', 10 > 10); // Output: false
+// Explanation: The '>' operator checks if the left operand is greater than the right operand.
 
-//greater than or equal to
-console.log('greater than or equal to')
-console.log('10>=5',10>=5)//true
-console.log('5>=10',5>=10)// false
-console.log('10>=10',10>=10)//true
+// 6. Greater Than or Equal To (>=)
+console.log('Greater Than or Equal To (>=)');
+console.log('10 >= 5:', 10 >= 5); // Output: true
+console.log('5 >= 10:', 5 >= 10); // Output: false
+console.log('10 >= 10:', 10 >= 10); // Output: true
+// Explanation: The '>=' operator checks if the left operand is greater than or equal to the right operand.
 
-// less than 
-console.log('less than ')
-console.log('10<5',10<5)// false
-console.log('5<10',5<10)//true
-console.log('10<10',10<10)// false
+// 7. Less Than (<)
+console.log('Less Than (<)');
+console.log('10 < 5:', 10 < 5); // Output: false
+console.log('5 < 10:', 5 < 10); // Output: true
+console.log('10 < 10:', 10 < 10); // Output: false
+// Explanation: The '<' operator checks if the left operand is less than the right operand.
 
-// less than or equal to
-console.log('less than or equal to')
-console.log('10<=5',10<=5)// false
-console.log('5<=10',5<=10)//true
-console.log('10<=10',10<=10)//true
+// 8. Less Than or Equal To (<=)
+console.log('Less Than or Equal To (<=)');
+console.log('10 <= 5:', 10 <= 5); // Output: false
+console.log('5 <= 10:', 5 <= 10); // Output: true
+console.log('10 <= 10:', 10 <= 10); // Output: true
+// Explanation: The '<=' operator checks if the left operand is less than or equal to the right operand.
