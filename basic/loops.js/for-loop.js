@@ -18,19 +18,17 @@ do {
     i++;
 } while (i < 0);
 
-//The for...in loop iterates over the enumerable properties of an object.
 //The for...in loop iterates over the enumerable properties of an object, 
 //including array indices, object keys, and other enumerable properties. Let's go through examples for each type of iterable object:
+/*Please note that using for...in with arrays can iterate over all enumerable properties, including array indices, which may not always 
+be what you want. It's generally recommended to use for...of with arrays for iterating over their elements directly. For iterating 
+over object properties, for...in is commonly used. */
 
 //Arrays (using indices):
 const array = [1, 2, 3];
 for (let index in array) {
     console.log(index); // Output: 0, 1, 2
 }
-
-/*Please note that using for...in with arrays can iterate over all enumerable properties, including array indices, which may not always 
-be what you want. It's generally recommended to use for...of with arrays for iterating over their elements directly. For iterating 
-over object properties, for...in is commonly used. */
 
 //Objects (using keys):
 const obj = {a: 1, b: 2, c: 3};
@@ -44,22 +42,6 @@ for (let index in string) {
     console.log(index); // Output: 0, 1, 2, 3, 4
 }
 
-//Maps (using keys):
-const myMaps = new Map();
-myMaps.set('a', 1);
-myMaps.set('b', 2);
-myMaps.set('c', 3);
-
-for (let key in myMaps) {
-    console.log(key); // Output: 'a', 'b', 'c'
-}
-
-//Sets (using indices, but not recommended):
-const mySets = new Set([1, 2, 3]);
-for (let index in mySets) {
-    console.log(index); // Output: '0', '1', '2'
-}
-
 //Arguments Object (using indices):
 function sum() {
     for (let index in arguments) {
@@ -68,8 +50,6 @@ function sum() {
 }
 
 sum(1, 2, 3); // Output: 1, 2, 3
-
-
 
 //The for...of loop iterates over the iterable objects such as arrays, strings, maps, sets, etc.
 
@@ -126,3 +106,5 @@ for (let num of myIterable) {
     console.log(num); // Output: 1, 2, 3
 }
 
+//for-of loop ideal for: arrays,string,map,sets
+//for-in loop ideal for: objects
